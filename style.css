@@ -1,0 +1,181 @@
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    /* background: linear-gradient(to right, #ffa31a, #808080); */
+    background: linear-gradient(to right, #441aff, #bd61f3);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.main-page {
+    width: 60%;
+    height: auto;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 40px;
+    position: relative;
+    align-items: center;
+}
+
+.front-page {
+    width: 350px;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 40px;
+    position: relative;
+}
+
+.front-page::before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, .2);
+    inset: 0;
+    transform: rotate(-3deg);
+    border-radius: 40px;
+    z-index: -1;
+}
+.front-page-logo {
+    margin-bottom: 2rem;
+}
+
+.front-page-logo img {
+    width: 190px;
+    border-radius: 20px;
+}
+ .main-page-logo {
+    margin-bottom: 2rem;
+    width: 190px;
+} 
+
+.main-page-logo img {
+    width: 140px;
+    border-radius: 20px;
+}
+
+.front-page-logo,
+.front-page-pictures,
+.front-page-login,
+.front-page-title {
+    text-align: center;
+}
+
+
+.front-page-login a{
+    text-decoration: none;
+    
+}
+
+.front-page-login a:hover {
+    text-decoration: underline;
+}
+
+.material-symbols-outlined {
+    width: 50px
+}
+
+.submit {
+    width: 90px;
+    opacity: 80%;
+    color: #160076;
+    background-color: #808080;
+    border-radius: 10px;
+}
+.submit:hover {
+    opacity: 100%;
+}
+
+
+
+.sidebar {
+    padding: 4rem;
+    height: auto;
+    background: rgba(255, 255, 255, .5);
+    border-bottom-right-radius: 30px;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 5%;
+}
+
+.sidebar-link {
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+a:visited {
+    color: #160076;
+}
+a {
+    color: #160076;
+}
+a:hover {
+    color: #004cff;
+}
+
+
+.topbar {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: rgba(255, 255, 255, .5);
+    top: 0;
+}
+
+.main-page-title {
+    text-align: center;
+    color: #160076;
+}
+
+.welcome-txt {
+    text-align: center;
+    font-family: "Snell Roundhand", "cursive"; 
+}
+
+
+
+.profile-page {
+    width: 30%;
+    height: auto;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 40px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-page-logo img {
+    width: 190px;
+    border-radius: 40px;
+}
+
+.save {
+    width: 110px;
+    opacity: 80%;
+    color: #160076;
+    background-color: #808080;
+    border-radius: 13px;
+}
+
+.right-com-bar {
+    padding: 4rem;
+    height: auto;
+    background: rgba(255, 255, 255, .5);
+    border-bottom-left-radius: 30px;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 5%;
+}
