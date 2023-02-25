@@ -1,12 +1,4 @@
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
-
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -23,7 +15,7 @@ body {
     height: auto;
     background: rgba(255, 255, 255, .5);
     padding: 4rem;
-    border-radius: 40px;
+    border-radius: 30px;
     position: relative;
     align-items: center;
 }
@@ -70,7 +62,6 @@ body {
     text-align: center;
 }
 
-
 .front-page-login a{
     text-decoration: none;
     
@@ -101,10 +92,10 @@ body {
     padding: 4rem;
     height: auto;
     background: rgba(255, 255, 255, .5);
-    border-bottom-right-radius: 30px;
+    border-bottom-right-radius: 10px; 
     position: absolute;
     left: 0;
-    top: 80px;
+    top: 81px;
     width: 5%;
 }
 
@@ -141,8 +132,14 @@ a:hover {
 .welcome-txt {
     text-align: center;
     font-family: "Snell Roundhand", "cursive"; 
+    font-size: 30px;
+    text-decoration: underline dotted;
 }
 
+.post-txt {
+  text-align: absolute;
+  font-family: 'Poppins', sans-serif;
+}
 
 
 .profile-page {
@@ -178,4 +175,71 @@ a:hover {
     right: 0;
     top: 80px;
     width: 5%;
+}
+
+.searchbar {
+  position: absolute;
+  right: 70px;
+  top: 25px;
+  width: 200px;
+  padding: -10px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.searchsubmit {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  height: 42px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.rightbar {
+    padding: 4rem;
+    height: auto;
+    background: rgba(255, 255, 255, .5);
+    border-bottom-left-radius: 30px;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 5%;
+}
+
+
+.user-message-box {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    width: 200px;
+    padding: -10px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+  } 
+
+
+.usr-post-box {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}  
+
+.usr-post-txt {
+  width: 400px;
+  height: 40px;
+  text-size-adjust: 100px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.send-btn {
+  width: 70px;  
+  height: 45px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }

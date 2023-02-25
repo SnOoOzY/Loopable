@@ -46,11 +46,11 @@
                 </span>
             <br> 
 
-            <input class="first-name" type="text" placeholder="First Name" required>
+            <input class="first-name" type="text" name="txtfirst-name" placeholder="First Name" required>
             <br> <br>
-            <input class="last-name" type="text" placeholder="Last Name" required> <br> <br>
+            <input class="last-name" name="txtlast-name" type="text" placeholder="Last Name" required> <br> <br>
            
-            <input class="submit" type="submit" value="Sign Up!" onClick="auth2(), confirmauth()">
+            <input class="submit" type="submit" value="Sign Up!" onClick="auth2(), confirmauth(), auth1()">
         
             <h3>Already have an account?</h3>
 
@@ -58,41 +58,7 @@
     </div>
             
    
-    <!--Signup Email / Password conformation (validation)-->
 
-    <script>
-
-        function auth2() {
-            var txtEmail = document.getElementById("txtEmail").value;
-             var txtPassword = document.getElementById("txtPassword").value;
-              var txtConpassword = document.getElementById("txtConpassword").value;
-
-                   if(txtEmail == "devcom@gmail.com" && txtPassword == "admin1234" && txtConpassword == "admin1234") {
-                          
-                    window.location.assign("site.html");
-                            alert("Sign up Success");
-
-                     } else if (txtEmail == "devcom@gmail.com" && txtPassword == "admin1234" && txtConpassword !== txtPassword.value) {
-
-                            alert("Passwords Are Not the Same, Please try Again"); 
-
-                        }  else if (txtEmail !== "devcom@gmail.com" && txtPassword =="admin1234" && txtConpassword == txtPassword.value) {
-
-                    
-                          alert("Email is Already in Use, Please try Again.");
-        
-                   } else if (txtEmail !== "devcom@gmail.com" && txtPassword !== "admin1234" && txtConpassword !== "admin1234") {
-                    
-                        alert("Email and Password are Invalid");
-
-                   } else if (txtEmail == "devcom@gmail.com" && txtPassword !== "admin1234" && txtConpassword !== "admin1234") {
-                        alert("Password is Invalid");
-                   }
-                }
-         
-               
-      
-      </script>
         
 
          

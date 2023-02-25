@@ -1,5 +1,5 @@
-# Loopable
-soical media thianfiknfaiopnf
+IF YOU WANT TO LOG IN / SIGN UP, PLEASE USE THE FOLLOWING DETAILS;
 
+email: "devcom@gmail.com"
+password: "admin1234"
 
-Loopable is a current project I'm working on, mostly to improve how I use Javascript for functional attributes within a website.
