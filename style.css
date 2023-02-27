@@ -102,7 +102,7 @@ body {
     height: auto;
     background: rgba(255, 255, 255, .5);
     border-bottom-right-radius: 10px; 
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 81px;
     width: 5%;
@@ -125,7 +125,7 @@ a:hover {
 
 
 .topbar {
-    position: absolute;
+    position: fixed;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -232,7 +232,7 @@ a:hover {
 
 
 .usr-post-box {
-    position: absolute;
+    position: fixed;
     align-items: center;
     justify-content: center;
     bottom: 0;
@@ -251,4 +251,41 @@ a:hover {
   height: 45px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.for-you-txt {
+  text-align: center;
+  font-family: "Snell Roundhand", "cursive"; 
+  font-size: 30px;
+}
+
+.post-box {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  border-radius: 5px;
+  outline: 5px dotted white;
+}
+
+.post-txt {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.usr-post-img {
+  width: 5%;
+  border-radius: 70px;
+}
+
+.usr-post-box-img {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  padding: 10px;
+  height: auto;
 }

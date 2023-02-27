@@ -31,7 +31,7 @@ let info = (
 
                    if(txtEmail == "devcom@gmail.com" && txtPassword == "admin1234" && txtConpassword == "admin1234") {
                             
-                    window.location.assign("site.html");
+                    window.location.assign("welcome.html");
                             alert("Sign up Success");
 
                      } else if (txtEmail == "devcom@gmail.com" && txtPassword == "admin1234" && txtConpassword !== txtPassword.value) {
@@ -67,7 +67,7 @@ let info = (
         var txtEmail = document.getElementById("txtEmail").value;
          var txtPassword = document.getElementById("txtPassword").value;
                if(txtEmail == "devcom@gmail.com" && txtPassword == "admin1234") {
-                       window.location.assign("site.html");
+                       window.location.assign("welcome.html");
                         alert("Login Success");
                  } else {
                       alert("Email or Password is Incorrect, Please try Again.");
