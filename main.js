@@ -94,32 +94,3 @@ function closeNav() {
 
 /* Message sending prevention (temporary) */
 
-function nosend() {
-
-  
-  alert("Sending messages is currently unavailable during the sites development phase, we will inform all users when sending messages is available.");
-  return;
-}
-
-
-function profilechk() {
-  var firstname = document.getElementById("firstname").value;
-    var lastname = document.getElementById("lastname").value;
-      var age = document.getElementById("age").value;
-
-    if (firstname == "" && lastname == "" && age == "") {
-      alert("Please set your name(s) & age to a valid value.");
-      return;
-    } else if (lastname == "" && age == "") {
-      alert("Plase set your last mamena & age to a valid value.");
-      return;
-    } else if (age == "") {
-      alert("Please set your age to a valid value.");
-    return;
- }
-}
-
-function searchdeny() {
-  alert("The search function on this site is currently not developed. Please try again another time.");
-  return;
-}
