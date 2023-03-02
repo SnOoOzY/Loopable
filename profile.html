@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YawnHub</title>
+    <title>Loopable</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -38,7 +38,7 @@
     </div>
     <div class="profile-page">
  
-        <h1 class="main-page-title">Your Name</h1>
+        <h1 class="profile-page-name-title">Your Name</h1>
  
          <div class="profile-page-logo">
         <img src="Yawnhublogo.jpg"> <br> <br> <br>
@@ -46,9 +46,9 @@
  
         <div class="info">
  
-        <input class="firstname" placeholder="First Name"> <br> <br>
-        <input class="lastname" placeholder="Last Name"><br> <br>
-        <input class="age" placeholder="Age"> <br> <br>
+        <input class="firstname" placeholder="First Name" name="firstname"> <br> <br>
+        <input class="lastname" placeholder="Last Name" name="lastname"><br> <br>
+        <input class="age" placeholder="Age" name="age"> <br> <br>
             <form action="sex">
                 <label for="sex"></label>
                 <select name="sex" id="sex">
@@ -61,7 +61,7 @@
         
         </ul>
  
-        <input class="save" type="submit" value="Save Changes" >
+        <input class="save-btn" type="submit" value="Save Changes" onclick="profile()">
  
         </div>
  
