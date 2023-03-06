@@ -11,7 +11,7 @@ body {
 }
 
 .main-page {
-    width: 50%;
+    width: 40%;
     height: auto;
     background: rgba(255, 255, 255, .5);
     padding: 4rem;
@@ -365,4 +365,27 @@ a:hover {
   50% {color: #160076; left: 0%; top: 0%;}
   75% {color: #bd61f3; left: -30%; top: -30%;}
   100% {color: #160076; left: 0%; top: 0%;}
+}
+
+.username-front{
+  display: block;
+}
+
+.front-page-clock {
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.front-page-pfp img {
+    width: 190px;
+    border-radius: 100px;
+}
+
+.send-msg-type {
+  width:60%;
+  left: 30%;
 }
