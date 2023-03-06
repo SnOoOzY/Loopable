@@ -92,5 +92,85 @@ function closeNav() {
 
 
 
+
+
+
 /* Message sending prevention (temporary) */
 
+function nosend() {
+
+  
+  alert("Sending messages is currently unavailable during the sites development phase, we will inform all users when sending messages is available.");
+}
+
+
+
+function profilechk() {
+  var firstname = document.getElementById("firstname");
+    var lastname = document.getElementById("lastname");
+      var age = document.getElementById("age");
+
+    if (firstname == "" && lastname == "" && age == "") {
+        alert("Please set your name(s) & age to a valid value.");
+      return;
+    } else if (lastname == "" && age == "") {
+        alert("Plase set your last mame & age to a valid value.");
+      return;
+    } else if (age == "") {
+        alert("Please set your age to a valid value.");
+    return;
+ }
+}
+
+function searchdeny() {
+ alert("The search function on this site is currently not developed. Please try again another time.");
+  return;
+}
+
+
+// Create cookie
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+// Delete cookie
+function deleteCookie(cname) {
+    const d = new Date();
+    d.setTime(d.getTime() + (24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=;" + expires + ";path=/";
+}
+
+// Read cookie
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+// Set cookie consent
+function acceptCookieConsent(){
+    deleteCookie('user_cookie_consent');
+    setCookie('user_cookie_consent', 1, 30);
+    document.getElementById("cookieNotice").style.display = "none";
+}
+
+let cookie_consent = getCookie("user_cookie_consent");
+if(cookie_consent != ""){
+    document.getElementById("cookieNotice").style.display = "none";
+}else{
+    document.getElementById("cookieNotice").style.display = "block";
+}

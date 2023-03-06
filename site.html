@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="main.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,9 +31,9 @@
 
 
 
-      <input class="searchbar" id="searchbar" name="searchbar" type="text" placeholder="Search">
+      <input class="searchbar" id="searchbar" name="searchbar" type="text" placeholder="Search (not functioning)">
 
-      <input class="searchsubmit" id="searchsubmit" name="searchsubmit" type="submit" value="Enter" onclick="">
+      <input class="searchsubmit" id="searchsubmit" name="searchsubmit" type="submit" value="Enter" onclick="nosend()">
  
     </div>
 
@@ -49,7 +50,7 @@
         <a href="#" class="sidebar-link">Friends</a> <br> <br> <br> <br> 
         <a href="community.html" class="sidebar-link">Community</a> <br> <br> <br> <br>
         <a href="#" class="sidebar-link">Discover</a> <br> <br> <br> <br>
-        <a href="#" class="sidebar-link">Contact Us</a> <br> <br> <br> <br>
+        <a href="Contact-us.html" class="sidebar-link">Contact Us</a> <br> <br> <br> <br>
         <a href="#" class="sidebar-link">Settings</a> <br> <br> <br> <br> <br> <br>
         <a href="index.html" class="sidebar-link">Login</a> <br> <br>
         <a href="signup.html" class="sidebar-link">Sign up</a>
@@ -116,6 +117,27 @@
   </div>
 
 </div>
+
+  <div id="cookieNotice" class="light display-right" style="display: none;">
+    <div id="closeIcon" style="display: none;">
+    </div>
+    <div class="title-wrap">
+        <h4>Cookie Consent</h4>
+    </div>
+    <div class="content-wrap">
+        <div class="msg-wrap">
+            <p>This website uses cookies or similar technologies, to enhance your browsing experience and provide personalized recommendations. By continuing to use our website, you agree to our  <a style="color:#115cfa;" href="/privacy-policy">Privacy Policy</a></p>
+            <div class="btn-wrap">
+                <button class="btn-primary" onclick="acceptCookieConsent();">Accept</button>
+            </div>
+        </div>
+    </div>
+</div>
+  
+        
+</div>
+
+
 
   
 </body>
