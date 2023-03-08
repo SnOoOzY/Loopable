@@ -105,10 +105,10 @@ function nosend() {
 
 
 
-function profilechk() {
-  var firstname = document.getElementById("firstname");
-    var lastname = document.getElementById("lastname");
-      var age = document.getElementById("age");
+/* function profilechk() {
+  var firstname = document.getElementById("firstname").value;
+    var lastname = document.getElementById("lastname").value;
+      var age = document.getElementById("age").value;
 
     if (firstname == "" && lastname == "" && age == "") {
         alert("Please set your name(s) & age to a valid value.");
@@ -120,7 +120,7 @@ function profilechk() {
         alert("Please set your age to a valid value.");
     return;
  }
-}
+} */
 
 function searchdeny() {
  alert("The search function on this site is currently not developed. Please try again another time.");
