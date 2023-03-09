@@ -366,7 +366,7 @@ a:hover {
 
 .front-page-pfp {
   display: flex;
-  justify-content: center;;
+  justify-content: center;
 }
 
 .front-page-pfp img {
@@ -379,4 +379,14 @@ a:hover {
   left: 30%;
   height: 20px;
   bottom: 40%;
+}
+
+.profile-vis-setting {
+    display: flex;
+}
+
+.setting-txt {
+  text-align: absolute;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
 }
