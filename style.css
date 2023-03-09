@@ -72,24 +72,12 @@ body {
 }
 
 .front-page-title {
-  text-align: center;
   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
+  color: #231557;
+  text-align: center;
+  position: relative;
+  bottom: 15%;
+  align-items: center;
   justify-content: center;
 }
 
@@ -389,4 +377,54 @@ a:hover {
   text-align: absolute;
   font-family: 'Poppins', sans-serif;
   display: flex;
+}
+
+.profile-vis-setting-drop {
+  display:flex;
+  width: 200px;
+  position: absolute;
+}
+
+.main-page-chat {
+  width: 40%;
+  background: rgba(255, 255, 255, .5);
+  padding: 4rem;
+  border-radius: 30px;
+  position: relative;
+  align-items: center;
+  height: 500px;
+}
+
+.main-page-chat::before {
+  content: '';
+  position: absolute;
+  background: rgba(255, 255, 255, .2);
+  inset: 0;
+  transform: rotate(-3deg);
+  border-radius: 30px;
+  z-index: -1;
+}
+
+.send-msg-type-chatroom {
+  width:100%;
+  left: 30%;
+  display: flex;
+  position: aboslute;
+}
+
+.leave-btn {
+  position: absolute;
+  left: 5%;
+  top: 90%;
+}
+
+.usr-message-box-chatroom {
+  width: 75%;
+  background: rgba(255, 255, 255, .5);
+  padding: 4rem;
+  border-radius: 30px;
+  position: relative;
+  align-items: center;
+  height: 300px;
+  top: 20px;
 }
