@@ -148,8 +148,8 @@ a:hover {
   text-transform: uppercase;
   color: #231557;
   text-align: center;
-  position: relative;
-  bottom: 15%;
+  position: absolute;
+  top: -13%;
   align-items: center;
   justify-content: center;
 }
@@ -419,12 +419,12 @@ a:hover {
 }
 
 .usr-message-box-chatroom {
-  width: 75%;
+  width: 60%;
   background: rgba(255, 255, 255, .5);
   padding: 4rem;
   border-radius: 30px;
-  position: relative;
+  position: absolute;
   align-items: center;
-  height: 300px;
-  top: 20px;
+  height: 200px;
+  top: 30%;
 }

@@ -212,25 +212,31 @@ function checkTime(i) {
 } */
 
 
+function loginsave() {
+  var input = document.getElementById("txtPassword").value;
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+  var input2 = document.getElementById("txtEmail").value;
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBkD9iTuqLCuhaQDcQe-fLFdupzoMQuv48",
-  authDomain: "loopable-41c09.firebaseapp.com",
-  projectId: "loopable-41c09",
-  storageBucket: "loopable-41c09.appspot.com",
-  messagingSenderId: "683931012251",
-  appId: "1:683931012251:web:bfe07a1f915f6cd01eca3e",
-  measurementId: "G-1P16GNW6B3"
-};
+  console.log(input);
+  console.log(input2);
+} 
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+function signupsave() {
+  var input = document.getElementById("txtEmail").value;
+    var input2 = document.getElementById("txtPassword").value;
+      var input3 = document.getElementById("txtConpassword").value;
+        var input4 = document.getElemenyById("first-name").value;
+          var input5 = document.getElementById("last-name").value;
+
+    if(input 2 !=== input3) {
+      return;
+    } else if(input2 === input3) {
+      console.log(input, input2, input3, input4, input5);
+    }
+  
+  
+}
+
+
+
+
