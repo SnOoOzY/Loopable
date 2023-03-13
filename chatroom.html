@@ -15,7 +15,14 @@
     <div class="topbar">
  
         <h1 class="main-page-title">Loopable</h1> 
- 
+
+
+
+      <input class="searchbar" id="searchbar" name="searchbar" type="text" placeholder="Search (not functioning)">
+
+      <input class="searchsubmit" id="searchsubmit" name="searchsubmit" type="submit" value="Enter" onclick="nosend()">
+
+      
     </div>
  
  
@@ -42,12 +49,17 @@
 
       <div class="messaging-tools">
       
-    <input type="text" class="send-msg-type-chatroom" placeholder="Share your mind!" maxlength="250">
+        <ul id="messages"></ul>
+        <form id="chatbox">
+          <textarea></textarea>
+          <br>
 
       <input type="submit" value="Post!" onclick="nosend()">
 
-      <input type="submit" value="Upload Image" class="upld-img-chatroom">
+      <input type="file" accept="image/*" class="upld-img-chatroom" placeholder="Upload Image">
 
+
+        
       </div>
 
       
@@ -68,7 +80,39 @@
       
     </div>
  
- 
+
+<script>  src="main.js"> </script> 
+    <script> 
+      $(function(){ 
+        var socket = null;
+        var msgBox = $("#chatbox textare");
+        var messages = $("#messages"); 
+        $("#chatbox").submit(function(){ 
+          if (!msgBox.val()) return false; 
+          if (!socket) { 
+            alert("Error: There is no socket connection."); 
+            return false; 
+          } 
+          socket.send(msgBox.val()); 
+          msgBox.val(""); 
+          return false; 
+        }); 
+        if (!window["WebSocket"]) { 
+          alert("Error: Your browser does not support web  sockets.") 
+        } else { 
+          socket = new WebSocket("ws://localhost:8080/room"); 
+          socket.onclose = function() { 
+            alert("Connection has been closed."); 
+          } 
+          socket.onmessage = function(e) { 
+            messages.append($("<li>").text(e.data)); 
+          } 
+        } 
+      }); 
+
+
+    </script> 
+  
  
 </body>
 </html>

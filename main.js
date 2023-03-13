@@ -1,3 +1,4 @@
+
 /* function auth() {
       var txtEmail = document.getElementById("txtEmail").value;
        var txtPassword = document.getElementById("txtPassword").value;
@@ -14,12 +15,6 @@ function auth2() {
 }
 */
 
-let info = (
-  {
-    email: "devcom@gmail.com",
-    password: "admin1234"
-  }
-)
 
 
  /* SIGNUP SCRIPT */
