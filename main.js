@@ -221,22 +221,71 @@ function loginsave() {
   console.log(input2);
 } 
 
+//(in progress) saves the information inputted via the user on the sign-up page
+
 function signupsave() {
   var input = document.getElementById("txtEmail").value;
     var input2 = document.getElementById("txtPassword").value;
-      var input3 = document.getElementById("txtConpassword").value;
+      var input3 = 
+document.getElementById("txtConpassword").value;
         var input4 = document.getElemenyById("first-name").value;
           var input5 = document.getElementById("last-name").value;
 
-    if(input 2 !=== input3) {
+    if(input2 !== input3) {
       return;
-    } else if(input2 === input3) {
-      console.log(input, input2, input3, input4, input5);
+    } else if(input2 == input3) {
+        console.log(input);
+        console.log(input2);
+        console.log(input3);
+        console.log(input4);
+        console.log(input5);
+      return;
     }
   
   
 }
 
+//(in progress) new login script that allows the user to define their own email / password rather than being given a set combo.
+
+function loginnew() {
+  var input = document.getElementById("txtEmail").value;
+    var input2 = document.getElementById("txtPassword").value;
+
+      if(input == input.value && input2 == input2.value) {
+        window.location.assign("welcome.html");
+                        alert("Login Success");
+      } else if(input !== input.value && input2 !== input2.value) {
+        alert("Login Failed");
+      }   else if(input == input.value && input2 !== input2.value) {
+        alert("Login Failed");
+      }     else if(input !== input.value && input2 == input2.value) {
+        alert("Login Failed");
+      }
+}
 
 
+//show / hide personal details in settings
 
+function showhide() {
+  var x = document.getElementById("account-details-email");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+//logging message contents
+
+function logmsg() {
+  var textcontents = document.getElementById("textcontentbox").value;
+
+  console.log(textcontents.value);
+  
+}
+
+function msgnotification() {
+
+  alert("Your Message Has successfully been sent!");
+}

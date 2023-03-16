@@ -1,4 +1,4 @@
-func main() {   
+/*func main() {   
   var addr = flag.String("addr", ":8080", "The addr of the  application.") 
   flag.Parse() // parse the flags 
   r := newRoom() 
@@ -25,3 +25,4 @@ socket = new WebSocket("ws://{{.Host}}/room");
 
 go build -o chat 
 ./chat -addr=":3000" 
+*/
