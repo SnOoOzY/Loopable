@@ -17,7 +17,7 @@ body {
     background: rgba(255, 255, 255, .5);
     padding: 4rem;
     border-radius: 30px;
-    position: relative;
+    position: absolute;
     align-items: center;
 }
 .main-page::before {
@@ -428,4 +428,48 @@ a:hover {
   align-items: center;
   height: 200px;
   top: 30%;
+}
+
+.post-btn-activity {
+  display: flex;
+}
+
+.activity-text-box {
+  display: flex;
+}
+
+.upld-img-activity {
+  display: flex;
+}
+
+.upld-img-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.change-profile-img-txt {
+  display: flex;
+}
+
+.posted-acts {
+  width: 30%;
+  height: auto;
+  background: rgba(255, 255, 255, .5);
+  padding: 4rem;
+  border-radius: 40px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.the-wall-main-page {
+  width: 40%;
+  height: auto;
+  background: rgba(255, 255, 255, .5);
+  padding: 4rem;
+  border-radius: 30px;
+  align-items: center;
+  position: fixed;
+  bottom: 3%;
 }
