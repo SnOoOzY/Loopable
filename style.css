@@ -463,13 +463,13 @@ a:hover {
   justify-content: center;
 }
 
-.the-wall-main-page {
-  width: 40%;
+.friends-list {
+  width: 13%;
   height: auto;
   background: rgba(255, 255, 255, .5);
   padding: 4rem;
-  border-radius: 30px;
+  border-radius: 40px;
   align-items: center;
-  position: fixed;
-  bottom: 3%;
+  text-align: center;
+  justify-content: center;
 }

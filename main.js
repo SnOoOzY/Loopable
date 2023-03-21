@@ -219,6 +219,7 @@ function loginsave() {
 
   console.log(input);
   console.log(input2);
+
 } 
 
 //(in progress) saves the information inputted via the user on the sign-up page
