@@ -44,6 +44,7 @@ function auth2() {
 
                    } else if (txtEmail == "devcom@gmail.com" && txtPassword !== "admin1234" && txtConpassword !== "admin1234") {
                         alert("Password is Invalid");
+                     
                    }
                 }
          
@@ -289,4 +290,24 @@ function logmsg() {
 function msgnotification() {
 
   alert("Your Message Has successfully been sent!");
+}
+
+function findfrienddenytemp() {
+
+  alert("The finding-friends function is currently not available during this stage of production, please try again another time.")
+  
+}
+
+function findfriend() {
+
+  searchbarfriend = document.getElementById("friend-search-bar").value;
+
+
+  if(!searchbarfriend) {
+    alert("Please enter a valid username")
+  } else {
+    alert("!!")
+  }
+
+  
 }

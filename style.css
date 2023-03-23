@@ -473,3 +473,20 @@ a:hover {
   text-align: center;
   justify-content: center;
 }
+
+.friends-list-small {
+  width: 50%;
+  height: 70%;
+  background: rgba(255, 255, 255, .5);
+  padding: 4rem;
+  border-radius: 40px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.front-page-clock-txt {
+  font-family: 'digital-clock-font';
+  src:  url('put_the_location_to_your_font.ttf or .otf');
+  font-size: 26px;
+}
