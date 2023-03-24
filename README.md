@@ -1,4 +1,4 @@
-##Loopable
+Loopable
 
 
 Loopable is a social media site in development.
