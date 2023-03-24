@@ -1,5 +1,8 @@
-IF YOU WANT TO LOG IN / SIGN UP, PLEASE USE THE FOLLOWING DETAILS;
+##Loopable
 
-email: "devcom@gmail.com"
-password: "admin1234"
 
+Loopable is a social media site in development.
+
+The site will include features such as chatrooms, profiles, friends, posting, and more.
+
+This project is licensed under the Unilicense, see LICENSE.md for more information.
