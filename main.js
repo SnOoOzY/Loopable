@@ -187,13 +187,20 @@ const searcharr = [
 
 function startTime() {
   const today = new Date();
+  const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   let h = today.getHours();
   let m = today.getMinutes();
   let s = today.getSeconds();
+  let d = weekday[today.getDay()];
+  let u = today.getDate();
+  let w = month[today.getMonth()];
+  let y = today.getFullYear();
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;  document.getElementById('txt2').innerHTML = d + " " + u + " " + w + " " + y;
   setTimeout(startTime, 1000);
+
 }
 
 function checkTime(i) {
@@ -306,8 +313,17 @@ function findfriend() {
   if(!searchbarfriend) {
     alert("Please enter a valid username")
   } else {
-    alert("!!")
+    alert("Friending users is currently unavailable during this stage of development within the site, please try again another time.")
   }
+}
 
+function welcometxt() {
+  var name = document.getElementById("first-name").value;
+  
+  
+    let o = name;
+  
+  
+  document.getElementById("welcome-txt").innerHTML = "Welcome back, " + o;
   
 }

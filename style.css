@@ -487,6 +487,6 @@ a:hover {
 
 .front-page-clock-txt {
   font-family: 'digital-clock-font';
-  src:  url('put_the_location_to_your_font.ttf or .otf');
+  src: url('put_the_location_to_your_font.ttf or .otf');
   font-size: 26px;
 }
