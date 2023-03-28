@@ -327,3 +327,25 @@ function welcometxt() {
   document.getElementById("welcome-txt").innerHTML = "Welcome back, " + o;
   
 }
+
+function changenameshow() {
+
+    const namedis = document.getElementById('profile-page-name-title').value;
+
+
+  
+
+  if (!namedis) {
+    alert("Please enter a valid username that must contain at least 3 characters.");
+  } else if (namedis.length <= 2) {
+    alert("This username is too short, please make sure your name is at least 3 characters in length.");
+  } else {
+    alert("Username changed!")
+
+    const disnamebox = document.getElementById("usernamedisplay").innerHTML = namedis;
+    
+  }
+
+  
+  
+}

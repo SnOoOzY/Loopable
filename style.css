@@ -490,3 +490,9 @@ a:hover {
   src: url('put_the_location_to_your_font.ttf or .otf');
   font-size: 26px;
 }
+
+.profile-page-username-display {
+  text-align: absolute;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+}
