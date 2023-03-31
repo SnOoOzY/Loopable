@@ -189,6 +189,19 @@ function startTime() {
   const today = new Date();
   const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  
+  const nth = function(today) {
+    const todayString = String(today);
+    const last = +todayString.slice(-2);
+  if (today > 3 && today < 21) return'th';
+  switch (today % 10) {
+    case 1: return "st";
+    case 2: return "nd";
+    case 3: return "rd";
+    default: return "th";
+  }
+}
+  
   let h = today.getHours();
   let m = today.getMinutes();
   let s = today.getSeconds();
@@ -198,15 +211,19 @@ function startTime() {
   let y = today.getFullYear();
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;  document.getElementById('txt2').innerHTML = d + " " + u + " " + w + " " + y;
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;  document.getElementById('txt2').innerHTML = d + " " + nth + " " + u + " " + w + " " + y;
   setTimeout(startTime, 1000);
 
 }
 
 function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10 
   return i;
 }
+
+
+
+
 
 
 /* function postlog() {
@@ -256,21 +273,28 @@ document.getElementById("txtConpassword").value;
 
 //(in progress) new login script that allows the user to define their own email / password rather than being given a set combo.
 
-function loginnew() {
-  var input = document.getElementById("txtEmail").value;
-    var input2 = document.getElementById("txtPassword").value;
+function signupnew() {
 
-      if(input == input.value && input2 == input2.value) {
-        window.location.assign("welcome.html");
-                        alert("Login Success");
-      } else if(input !== input.value && input2 !== input2.value) {
-        alert("Login Failed");
-      }   else if(input == input.value && input2 !== input2.value) {
-        alert("Login Failed");
-      }     else if(input !== input.value && input2 == input2.value) {
-        alert("Login Failed");
-      }
+  const email = document.getElementById("txtEmail").value;
+
+    const password1 = document.getElementById("txtPassword").value;
+
+      const password2 = document.getElementById("txtConpassword").value;
+
+        const firstn = document.getElementById("first-name").value;
+
+          const secn = document.getElementById("last-name").value;
+
+
+  if(email && password1 && password2 && firstn && secn) {
+    alert("Welcome to Loopable!");
+  } else {
+    alert("Please fill out all options.");
+  }
+  
+  
 }
+
 
 
 //show / hide personal details in settings
@@ -339,11 +363,16 @@ function changenameshow() {
     alert("Please enter a valid username that must contain at least 3 characters.");
   } else if (namedis.length <= 2) {
     alert("This username is too short, please make sure your name is at least 3 characters in length.");
-  } else {
+  } else if (namedis.length >= 20) {
+    alert("This username is too longth.")
+  }
+  
+  else {
     alert("Username changed!")
 
-    const disnamebox = document.getElementById("usernamedisplay").innerHTML = namedis;
-    
+    const changetxt = document.getElementById("usernamedisplay").innerHTML = namedis;
+
+    console.log(changetxt);
   }
 
   
