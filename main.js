@@ -211,7 +211,8 @@ function startTime() {
   let y = today.getFullYear();
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;  document.getElementById('txt2').innerHTML = d + " " + nth + " " + u + " " + w + " " + y;
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  document.getElementById('txt2').innerHTML = d + " " + " " + u + " " + w + " " + y;
   setTimeout(startTime, 1000);
 
 }
@@ -378,3 +379,14 @@ function changenameshow() {
   
   
 }
+
+
+function activity() {
+  let actext = document.getElementById("activity-status-text-box").value;
+
+  
+  document.getElementById("activity-value-text").innerHTML = actext;
+
+}
+
+

@@ -26,7 +26,7 @@
  
  
         <a href="site.html" class="sidebar-link">Home</a> <br> <br> <br> <br>
-        <a href="profile.html" class="sidebar-link">My Profile</a> <br> <br> <br> <br>
+        <a href="profile.html" class="sidebar-link">Profile</a> <br> <br> <br> <br>
         <a href="#" class="sidebar-link">Friends</a> <br> <br> <br> <br> 
         <a href="#" class="sidebar-link">Community</a> <br> <br> <br> <br>
         <a href="#" class="sidebar-link">Discover</a> <br> <br> <br> <br>
@@ -49,7 +49,7 @@
         <img src="Yawnhublogo.jpg"> <br> <br> <br>
                       
            <h3 class="change-profile-img-txt">Change Profile Image</h3>
-           <input type="file" accept="image/*" class="upld-img-profile" placeholder="Upload Image">
+           <input type="file" accept="image/*" class="upld-img-profile" id="image_input" placeholder="Upload Image">
  
         <div class="info">
  
@@ -86,16 +86,15 @@
 
         <div class="new-act">
 
-         <textarea placeholder="Share your activities!" class="activity-text-box"></textarea>
+         <textarea placeholder="Share your activities!" class="activity-text-box" id="activity-status-text-box" maxlength="30"></textarea>
 
-              <input type="button" value="Update" class="post-btn-activity">
+              <input type="button" value="Update" class="post-btn-activity" onclick="activity()">
 
           
         </div>
 
           <div class="posted-acts">
-
-                
+              <div id="activity-value-text"></div>
             
 
           </div>
