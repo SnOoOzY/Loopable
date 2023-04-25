@@ -192,14 +192,6 @@ function startTime() {
   
   const nth = function(today) {
     const todayString = String(today);
-    const last = +todayString.slice(-2);
-  if (today > 3 && today < 21) return'th';
-  switch (today % 10) {
-    case 1: return "st";
-    case 2: return "nd";
-    case 3: return "rd";
-    default: return "th";
-  }
 }
   
   let h = today.getHours();
@@ -211,7 +203,7 @@ function startTime() {
   let y = today.getFullYear();
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;  document.getElementById('txt2').innerHTML = d + " " + nth + " " + u + " " + w + " " + y;
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;  document.getElementById('txt2').innerHTML = d + " " + " " + u + " " + w + " " + y;
   setTimeout(startTime, 1000);
 
 }
