@@ -101,22 +101,6 @@ function nosend() {
 
 
 
-/* function profilechk() {
-  var firstname = document.getElementById("firstname").value;
-    var lastname = document.getElementById("lastname").value;
-      var age = document.getElementById("age").value;
-
-    if (firstname == "" && lastname == "" && age == "") {
-        alert("Please set your name(s) & age to a valid value.");
-      return;
-    } else if (lastname == "" && age == "") {
-        alert("Plase set your last mame & age to a valid value.");
-      return;
-    } else if (age == "") {
-        alert("Please set your age to a valid value.");
-    return;
- }
-} */
 
 function searchdeny() {
  alert("The search function on this site is currently not developed. Please try again another time.");
@@ -364,9 +348,46 @@ function changenameshow() {
 
     const changetxt = document.getElementById("usernamedisplay").innerHTML = namedis;
 
+    const logname = document.getElementById("friends-page-username").innerHTML = namedis;
+
     console.log(changetxt);
   }
 
   
+  
+}
+
+function activitydeny() {
+  const activity = document.getElementById("activity-text-box").value;
+
+  const submit = document.getElementById("post-btn-activity").value;
+
+  if(submit) {
+    alert("Activity status changed!");
+    document.getElementById("posted-acts").innerHTML = activity;
+  }
+}
+
+
+function profileinfo() {
+  const username = document.getElementById("username").value;
+  const firstname = doucment.getElementById("firstname").value;
+  const lastname = document.getElementById("lastname").value;
+  const age = document.getElementById("age").value;
+
+  
+
+  if(age < 12) {
+    alert("You are not old enough to be signing up to this site.");
+    return;
+  } else if(age > 150) {
+    alert("You are too old to be signing up to this site.");
+    return;
+  } else if(username.length < 3) {
+    alert("Your username must be at least 4 characters in longth to be vald.");
+    return;
+  } else if(username.length > 30) {
+    alert("Your username is too longth, it must be less than 30 characters longth to be vald.")
+  }
   
 }

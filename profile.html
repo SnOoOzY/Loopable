@@ -43,19 +43,27 @@
       <div id="usernamedisplay" class="profile-page-username-display"></div>
  
         <input type="text" class="profile-page-name-title" id="profile-page-name-title" placeholder="Change username">
-      <input type="submit" value="Save" onclick="changenameshow()">
+      <input type="button" value="Save" onclick="changenameshow()">
  
          <div class="profile-page-logo">
         <img src="Yawnhublogo.jpg"> <br> <br> <br>
+
+           <div class="username-display-profile">
+
+              
+             
+           </div>
                       
            <h3 class="change-profile-img-txt">Change Profile Image</h3>
            <input type="file" accept="image/*" class="upld-img-profile" placeholder="Upload Image">
  
         <div class="info">
- 
-        <input class="firstname" placeholder="First Name" name="firstname"> <br> <br>
-        <input class="lastname" placeholder="Last Name" name="lastname"><br> <br>
-        <input class="age" placeholder="Age" name="age"> <br> <br>
+
+          <input class="username" placeholder="Username" id="username"> <br> <br>
+          
+        <input class="firstname" placeholder="First Name" id="firstname"> <br> <br>
+        <input class="lastname" placeholder="Last Name" id="lastname"><br> <br>
+        <input class="age" placeholder="Age" id="age"> <br> <br>
             <form action="sex">
                 <label for="sex"></label>
                 <select name="sex" id="sex">
@@ -70,7 +78,7 @@
 
           
  
-        <input class="save-btn" type="submit" value="Save Changes" onclick="profilechk()">
+        <input class="save-btn" type="button" value="Save Changes" onclick="profileinfo()">
  
         </div>
  
@@ -86,14 +94,14 @@
 
         <div class="new-act">
 
-         <textarea placeholder="Share your activities!" class="activity-text-box"></textarea>
+         <textarea class="activity-box" placeholder="Share your activities!" class="activity-text-box" id="activity-text-box"></textarea>
 
-              <input type="button" value="Update" class="post-btn-activity">
+              <input type="button" value="Update" class="post-btn-activity" id="post-btn-activity" onclick="activitydeny()">
 
           
         </div>
 
-          <div class="posted-acts">
+          <div class="posted-acts" id="posted-acts">
 
                 
             
