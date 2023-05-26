@@ -190,6 +190,7 @@ a:hover {
 .profile-page-logo img {
     width: 190px;
     border-radius: 100px;
+    padding-top: 10px;
 }
 
 .save {
@@ -494,3 +495,10 @@ a:hover {
   font-family: 'Poppins', sans-serif;
   font-size: 50px;
 }
+
+.activity-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
