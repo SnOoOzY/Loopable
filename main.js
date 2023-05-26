@@ -187,7 +187,12 @@ function startTime() {
   let y = today.getFullYear();
   m = checkTime(m);
   s = checkTime(s);
+
   document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;  document.getElementById('txt2').innerHTML = d + " " + " " + u + " " + w + " " + y;
+=======
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  document.getElementById('txt2').innerHTML = d + " " + " " + u + " " + w + " " + y;
+
   setTimeout(startTime, 1000);
 
 }
@@ -357,6 +362,7 @@ function changenameshow() {
   
 }
 
+
 function activitydeny() {
   const activity = document.getElementById("activity-text-box").value;
 
@@ -391,3 +397,15 @@ function profileinfo() {
   }
   
 }
+=======
+
+function activity() {
+  let actext = document.getElementById("activity-status-text-box").value;
+
+  
+  document.getElementById("activity-value-text").innerHTML = actext;
+
+}
+
+
+

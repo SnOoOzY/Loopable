@@ -55,7 +55,7 @@
            </div>
                       
            <h3 class="change-profile-img-txt">Change Profile Image</h3>
-           <input type="file" accept="image/*" class="upld-img-profile" placeholder="Upload Image">
+           <input type="file" accept="image/*" class="upld-img-profile" id="image_input" placeholder="Upload Image">
  
         <div class="info">
 
@@ -94,17 +94,28 @@
 
         <div class="new-act">
 
+
          <textarea class="activity-box" placeholder="Share your activities!" class="activity-text-box" id="activity-text-box"></textarea>
 
               <input type="button" value="Update" class="post-btn-activity" id="post-btn-activity" onclick="activitydeny()">
 
+         <textarea placeholder="Share your activities!" class="activity-text-box" id="activity-status-text-box" maxlength="30"></textarea>
+
+              <input type="button" value="Update" class="post-btn-activity" onclick="activity()">
+
+
           
         </div>
+
 
           <div class="posted-acts" id="posted-acts">
 
                 
+
+          <div class="posted-acts">
+              <div id="activity-value-text"></div>
             
+        
 
           </div>
     
